@@ -7,6 +7,9 @@ function handleConnection(client, request) {
 
     function onClose() {
         console.log(`Connection Closed`);
+        
+        var position = clients.indexOf(client);
+        clients.splice(position, 1);
     }
 
     function onMessage(data) {
@@ -28,7 +31,7 @@ function handleConnection(client, request) {
             console.log(error)
         }
     });
-    
+
     client.on('close', onClose);
 }
 
