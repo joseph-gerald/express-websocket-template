@@ -19,6 +19,6 @@ wss.on('connection', handleConnection);
 
 server.listen(port, () => {
     console.log(`
-    >    MusicGuessr is running on port ${port}
+    >    Express websocket server started on port ${port}
     `);
 });
