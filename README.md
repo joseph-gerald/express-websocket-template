@@ -1,2 +1,2 @@
-# express-template
-Basic express setup
+# express-websocket-template
+Basic express and websocket setup
